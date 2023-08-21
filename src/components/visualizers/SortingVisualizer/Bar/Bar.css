@@ -1,0 +1,19 @@
+.bar-finished {
+  animation-name: barFinishAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes barFinishAnimation {
+  0% {
+    background-color: white;
+  }
+  100% {
+    outline-color: white;
+    font-size: 0;
+  }
+}
