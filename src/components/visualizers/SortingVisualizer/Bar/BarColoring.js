@@ -19,6 +19,9 @@ function linearGradient(stops, value) {
 }
 
 function lerp(pointA, pointB, normalValue) {
+  if (pointA === undefined || pointB === undefined) {
+    return [0, 0, 0];
+  }
   return [
     pointA[0] + (pointB[0] - pointA[0]) * normalValue,
     pointA[1] + (pointB[1] - pointA[1]) * normalValue,

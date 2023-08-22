@@ -4,20 +4,6 @@ function swap(arr, a, b) {
   arr[b] = temp;
 }
 
-// highlight element =>
-// -> red for searching
-// -> orange for sorted
-// -> green for comparison (followed by swap usually)
-// -> yellow => current pivot (quicksort)
-
-// next:
-// test sorting methods on array
-// get animations to work for simple sorts
-// get partitioning/more complex sorts
-
-// figure out which color bars to send over
-
-// https://onlinegiftools.com/play-gif, selection sort gif find source
 function selectionSort(arr) {
   let statesInOrder = [];
   let temp;
@@ -53,7 +39,6 @@ function selectionSort(arr) {
   return statesInOrder;
 }
 
-//based off visualgo
 function bubbleSort(arr) {
   let statesInOrder = [];
   let temp;
@@ -79,7 +64,6 @@ function bubbleSort(arr) {
   return statesInOrder;
 }
 
-// based off visualgo
 function insertionSort(arr) {
   let statesInOrder = [];
   let temp;
@@ -105,6 +89,7 @@ function insertionSort(arr) {
   return statesInOrder;
 }
 
+// based off timo bingmann visualization - https://www.youtube.com/watch?v=ZRPoEKHXTJg (volume warning)
 function mergeSort(arr) {
   let statesInOrder = [];
   mergeSortHelper(arr, 0, arr.length - 1, statesInOrder);
@@ -124,7 +109,6 @@ function mergeSortHelper(arr, start, end, statesInOrder) {
   merge(arr, start, mid, end, statesInOrder);
 }
 
-// timo binggman visualizer based off of
 function merge(arr, start, mid, end, statesInOrder) {
   let k = start,
     i = start,
@@ -203,6 +187,7 @@ function merge(arr, start, mid, end, statesInOrder) {
   }
 }
 
+// based off timo bingmann visualization - https://www.youtube.com/watch?v=8hEyhs3OV1w (volume warning)
 function quickSort(arr) {
   let statesInOrder = [];
   quickSortHelper(arr, 0, arr.length - 1, statesInOrder);

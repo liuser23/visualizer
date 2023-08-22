@@ -1,0 +1,6 @@
+:hover.gradient-hover {
+  background: linear-gradient(25deg, #ffafbd, #ffc3a0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
